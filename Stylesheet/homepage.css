@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: white;
+    background-color: rgb(10, 10, 10);
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    padding: 20px 40px;
+    width: 100%;
+  }
+
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hide by default */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .fab {
+    color: white;
+  }
+
+  .menu-toggle{
+    display: block;
+  }
+
+  .fa-bars {
+    color: white;
+    display: block;
+  }
+
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu .navbar-links {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+  }
+  
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .social-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Technologies Section */
+  .technologies {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .technologies h2 {
+    font-size: 1.5rem;
+    font-weight: medium;
+    margin-bottom: 20px;
+  }
+  
+  .technologies-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tech-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  /* When screen is wider than 720px */
+@media screen and (min-width: 721px) {
+    .App{
+        padding: 0.5em 16em;
+    }
+    .menu-toggle {
+      display: none;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar-menu {
+      display: flex;
+      position: static;
+      width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .navbar-menu .navbar-links {
+        margin-top: 0;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
