@@ -78,11 +78,10 @@
   
   /* Hero Section */
   .hero {
-    min-height: 100vh;
-    margin: 10% 0px;
+    min-height: 80vh;
+    margin: 10% 0px 0px 0px;
     text-align: center;
     width: 100%;
-
   }
 
   .fab {
@@ -198,6 +197,23 @@ align-self: center;
   }
   
   /* Technologies Section */
+.technologies-section{
+  /* background-color: red; */
+  padding: 0px 8% 0px 8%;
+  text-align: center;
+  width: 100%;
+}
+.technologies-title h2{
+  margin-bottom: 0.6em;
+  font-size: 1.875rem
+}
+
+.technologies-title{
+  text-align: left;
+}
+
+
+
   .technologies {
     margin-top: 50px;
     text-align: center;
@@ -207,6 +223,10 @@ align-self: center;
     font-size: 1.5rem;
     font-weight: medium;
     margin-bottom: 20px;
+  }
+  
+  .technologies-sub-heading {
+    color: rgb(165, 164, 163);
   }
   
   .technologies-logos {
